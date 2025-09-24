@@ -1,0 +1,142 @@
+import React from 'react';
+import { ArrowRight, Star, Shield, Clock } from 'lucide-react';
+
+interface PaginaInicialProps {
+  id: string;
+  onNavigate: (secaoId: string) => void;
+}
+
+const PaginaInicial: React.FC<PaginaInicialProps> = ({ id, onNavigate }) => {
+  return (
+    <div id={id}>
+      {/* Banner principal */}
+      <section className="relative min-h-screen flex items-center">
+        {/* Imagem de fundo */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        </div>
+
+        {/* Conteúdo do banner */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+          <div className="max-w-3xl">
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Elegância em 
+              <span className="text-orange-500"> Mármore</span>
+            </h2>
+            <p className="text-xl md:text-2xl mb-8 text-gray-200">
+              Transformamos espaços com a sofisticação e qualidade que apenas o mármore pode oferecer. 
+              Mais de 15 anos criando ambientes únicos e inesquecíveis.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button 
+                onClick={() => onNavigate('contato')}
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+              >
+                Fale Conosco
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </button>
+              <button 
+                onClick={() => onNavigate('galeria')}
+                className="border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-lg transition-all duration-300"
+              >
+                Ver Nossos Trabalhos
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Nossos diferenciais */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">Por que escolher a Inova Artes?</h3>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Nossa experiência e dedicação garantem resultados excepcionais em cada projeto
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Qualidade Superior */}
+            <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Star className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Qualidade Superior</h4>
+              <p className="text-gray-600 leading-relaxed">
+                Utilizamos apenas mármores selecionados e técnicas avançadas para garantir 
+                durabilidade e beleza incomparáveis.
+              </p>
+            </div>
+
+            {/* Confiança Total */}
+            <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Confiança Total</h4>
+              <p className="text-gray-600 leading-relaxed">
+                15 anos de experiência e centenas de clientes satisfeitos. 
+                Garantia completa em todos os nossos serviços.
+              </p>
+            </div>
+
+            {/* Prazo Cumprido */}
+            <div className="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Prazo Cumprido</h4>
+              <p className="text-gray-600 leading-relaxed">
+                Planejamento detalhado e equipe especializada garantem a entrega 
+                pontual de todos os projetos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resumo dos serviços */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">Nossos Serviços</h3>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Oferecemos soluções completas em mármore para transformar seus ambientes
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              'Bancadas de Cozinha',
+              'Pisos em Mármore',
+              'Escadas e Degraus',
+              'Revestimentos'
+            ].map((servico, index) => (
+              <div key={index} className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">{servico}</h4>
+                <p className="text-gray-600 text-sm">Qualidade premium</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => onNavigate('servicos')}
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Ver Todos os Serviços
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default PaginaInicial;
