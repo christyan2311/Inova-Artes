@@ -13,15 +13,15 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 1,
       titulo: 'Bancada de Cozinha Premium',
       categoria: 'Bancadas',
-      imagem: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      imagem: '../../public/images/image-6.jpeg',
       descricao: 'Bancada em mármore Carrara com acabamento polido para cozinha gourmet.'
     },
     {
       id: 2,
-      titulo: 'Piso em Mármore Travertino',
-      categoria: 'Pisos',
-      imagem: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      descricao: 'Aplicação de piso em mármore travertino em sala de estar.'
+      titulo: 'Bancada de Sala de Estar',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/image-4.jpeg',
+      descricao: 'Bancada de Sala de Estar.'
     },
     {
       id: 3,
@@ -39,9 +39,9 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
     },
     {
       id: 5,
-      titulo: 'Banheiro em Mármore',
+      titulo: 'Bancada',
       categoria: 'Bancadas',
-      imagem: 'https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      imagem: '../../public/images/image-5.jpeg',
       descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
     },
     {
@@ -64,6 +64,34 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       categoria: 'Detalhes',
       imagem: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       descricao: 'Soleiras e detalhes arquitetônicos em mármore.'
+    },
+    {
+      id: 9,
+      titulo: 'Bancada',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/image-1.jpeg',
+      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
+    },
+    {
+      id: 10,
+      titulo: 'Bancada',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/image-2.jpeg',
+      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
+    },
+    {
+      id: 11,
+      titulo: 'Bancada',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/image-3.jpeg',
+      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
+    },
+    {
+      id: 12,
+      titulo: 'Bancada',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/image-7.jpeg',
+      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
     }
   ];
 

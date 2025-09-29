@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { ArrowRight, Star, Shield, Clock } from 'lucide-react';
 
 interface PaginaInicialProps {
@@ -7,46 +8,117 @@ interface PaginaInicialProps {
 }
 
 const PaginaInicial: React.FC<PaginaInicialProps> = ({ id, onNavigate }) => {
+  // ========================================
+  // CONFIGURAÇÃO DO CARROSSEL DE IMAGENS
+  // ========================================
+  // Para trocar as imagens do carrossel, substitua as URLs abaixo pelas suas imagens
+  // Recomendação: Use imagens com resolução mínima de 1920x1080px
+  const imagensCarrossel = [
+   '../../public/images/image-1.jpeg',
+   '../../public/images/image-2.jpeg',
+   '../../public/images/image-3.jpeg',
+   '../../public/images/image-4.jpeg',
+   '../../public/images/image-5.jpeg',
+    '../../public/images/image-6.jpeg',
+    '../../public/images/image-7.jpeg',
+  ];
+
+  // Estado para controlar qual imagem está ativa no carrossel
+  const [imagemAtiva, setImagemAtiva] = useState(0);
+
+  // ========================================
+  // LÓGICA DO CARROSSEL AUTOMÁTICO
+  // ========================================
+  useEffect(() => {
+    // Configuração do tempo de transição (em milissegundos)
+    // Para alterar a velocidade, modifique o valor abaixo:
+    // 4000 = 4 segundos, 6000 = 6 segundos, etc.
+    const TEMPO_TRANSICAO = 5000;
+
+    const intervalo = setInterval(() => {
+      setImagemAtiva((imagemAtual) => 
+        // Loop infinito: volta para a primeira imagem após a última
+        (imagemAtual + 1) % imagensCarrossel.length
+      );
+    }, TEMPO_TRANSICAO);
+
+    // Limpeza do intervalo quando o componente for desmontado
+    // Isso previne vazamentos de memória
+    return () => clearInterval(intervalo);
+  }, [imagensCarrossel.length]);
+
   return (
     <div id={id}>
       {/* Banner principal */}
       <section className="relative min-h-screen flex items-center">
-        {/* Imagem de fundo */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        {/* ========================================
+            CARROSSEL DE IMAGENS DE FUNDO
+            ======================================== */}
+        <div className="absolute inset-0 overflow-hidden">
+          {imagensCarrossel.map((imagem, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+                index === imagemAtiva ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{
+                backgroundImage: `url('${imagem}')`,
+              }}
+            />
+          ))}
+          
+          {/* Overlay com transparência ajustada para melhor legibilidade */}
+          {/* bg-opacity-40 = 40% de transparência (mais sutil que antes) */}
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
 
         {/* Conteúdo do banner */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-3xl">
+            {/* Adicionando uma sombra sutil ao texto para melhor legibilidade */}
             <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Elegância em 
               <span className="text-orange-500"> Mármore</span>
             </h2>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Transformamos espaços com a sofisticação e qualidade que apenas o mármore pode oferecer. 
-              Mais de 15 anos criando ambientes únicos e inesquecíveis.
+            <p className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-lg">
+              Transformamos espaços com a sofisticação e qualidade que apenas  pedras naturais e sintéticas podem oferecer . Mais de 15 anos criando ambientes únicos e inesquecíveis para cada cliente
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => onNavigate('contato')}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg"
               >
                 Fale Conosco
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
               <button 
                 onClick={() => onNavigate('galeria')}
-                className="border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-lg transition-all duration-300"
+                className="border-2 border-white text-white hover:bg-white hover:text-black font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg"
               >
                 Ver Nossos Trabalhos
               </button>
             </div>
+          </div>
+        </div>
+
+        {/* ========================================
+            INDICADORES DO CARROSSEL
+            ======================================== */}
+        {/* Indicadores centralizados na parte inferior da seção hero */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30">
+          <div className="flex space-x-3 bg-black bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full">
+            {imagensCarrossel.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setImagemAtiva(index)}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                  index === imagemAtiva 
+                    ? 'bg-orange-500 scale-125 shadow-lg' 
+                    : 'bg-white bg-opacity-60 hover:bg-opacity-90 hover:scale-110'
+                }`}
+                aria-label={`Ir para imagem ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -69,8 +141,7 @@ const PaginaInicial: React.FC<PaginaInicialProps> = ({ id, onNavigate }) => {
               </div>
               <h4 className="text-2xl font-bold text-gray-900 mb-4">Qualidade Superior</h4>
               <p className="text-gray-600 leading-relaxed">
-                Utilizamos apenas mármores selecionados e técnicas avançadas para garantir 
-                durabilidade e beleza incomparáveis.
+                Utilizamos apenas pedras selecionadas e  técnicas avançadas para garantir durabilidade e beleza incomparáveis
               </p>
             </div>
 
