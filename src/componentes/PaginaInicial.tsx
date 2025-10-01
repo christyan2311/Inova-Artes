@@ -14,8 +14,18 @@ const PaginaInicial: React.FC<PaginaInicialProps> = ({ id, onNavigate }) => {
   // Para trocar as imagens do carrossel, substitua as URLs abaixo pelas suas imagens
   // Recomendação: Use imagens com resolução mínima de 1920x1080px
   const imagensCarrossel = [
+  '../../public/images/Ilhas/Cozinha Gourmet com Ilha em Mármore e Design Integrado.png',
+  '../../public/images/Area de lazer/Área Gourmet Externa com Bancadas.png',
+  '../../public/images/Area de lazer/Piscina e Jacuzzi.png',
+  '../../public/images/Bancadas/Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta.jpg',
+  '../../public/images/Bancadas/Bancadas Funcionais para Cozinha.png',
+  '../../public/images/Banheiros-Lavatorios/Banheiro com Design em Mármore Black & White.png',
+  '../../public/images/Banheiros-Lavatorios/Banheiro Luxuoso com Revestimento em Mármore Verde Esmeralda.jpg',
+  '../../public/images/Banheiros-Lavatorios/Lavatório Duplo em Mármore Panda Branco e Preto.png',
   '../../public/images/Area de lazer/Balcão Iluminado em Ônix para Bar.png',
-  '../../public/images/Bancadas/Cozinha Moderna com Bancadas em Granito.png'
+  '../../public/images/Bancadas/Cozinha Moderna com Bancadas em Granito.png',
+  '../../public/images/Mesas/Mesa de Jantar em Granito Nero Portoro com Design Exclusivo.png',
+  '../../public/images/Mesas/Mesa de Jantar com Tampo Orgânico em Mármore Exótico.png',
   ];
 
   // Estado para controlar qual imagem está ativa no carrossel
