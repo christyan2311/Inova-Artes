@@ -34,7 +34,7 @@ const SobreNos: React.FC<SobreNosProps> = ({ id }) => {
           </div>
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
+              src="" 
               alt="Equipe Inova Artes trabalhando"
               className="rounded-2xl shadow-xl w-full"
             />
@@ -61,8 +61,8 @@ const SobreNos: React.FC<SobreNosProps> = ({ id }) => {
           </div>
 
           {/* Visão */}
-          <div className="text-center p-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl">
-            <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="text-center p-8 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl">
+            <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
               <Award className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Nossa Visão</h3>

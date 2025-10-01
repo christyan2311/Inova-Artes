@@ -71,30 +71,6 @@ const Rodape: React.FC<RodapeProps> = ({ onNavigate }) => {
             </ul>
           </div>
 
-          {/* Serviços */}
-          <div>
-            <h4 className="text-lg font-bold mb-6">Nossos Serviços</h4>
-            <ul className="space-y-3">
-              {[
-                'Bancadas de Cozinha',
-                'Pisos em Mármore',
-                'Escadas e Degraus',
-                'Revestimentos',
-                'Restauração',
-                'Manutenção'
-              ].map((servico) => (
-                <li key={servico}>
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-orange-400 transition-colors duration-200"
-                  >
-                    {servico}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contato */}
           <div>
             <h4 className="text-lg font-bold mb-6">Contato</h4>

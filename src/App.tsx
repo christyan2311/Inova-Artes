@@ -12,10 +12,25 @@ function App() {
 
   const navegarParaSecao = (secaoId: string) => {
     setSecaoAtiva(secaoId);
-    const elemento = document.getElementById(secaoId);
-    if (elemento) {
-      elemento.scrollIntoView({ behavior: 'smooth' });
-    }
+    
+    // Pequeno delay para garantir que o menu mobile feche antes da rolagem
+    setTimeout(() => {
+      const elemento = document.getElementById(secaoId);
+      if (elemento) {
+        // Altura do cabeçalho fixo (h-20 = 80px)
+        const alturaHeader = 80;
+        
+        // Calcula a posição considerando o header fixo
+        const posicaoElemento = elemento.offsetTop;
+        const posicaoFinal = posicaoElemento - alturaHeader;
+        
+        // Rolagem suave até a posição correta
+        window.scrollTo({
+          top: posicaoFinal,
+          behavior: 'smooth'
+        });
+      }
+    }, 100); // 100ms de delay para o menu fechar
   };
 
   return (

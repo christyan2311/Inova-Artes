@@ -189,10 +189,10 @@ const PaginaInicial: React.FC<PaginaInicialProps> = ({ id, onNavigate }) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              'Bancadas de Cozinha',
-              'Pisos em Mármore',
-              'Escadas e Degraus',
-              'Revestimentos'
+              'Bancadas',
+              'Cubas e Lavatorios',
+              'Mesas',
+              'Ilhas'
             ].map((servico, index) => (
               <div key={index} className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl text-center hover:shadow-lg transition-all duration-300">
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">{servico}</h4>
