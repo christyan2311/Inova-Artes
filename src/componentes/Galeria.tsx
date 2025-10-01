@@ -11,88 +11,109 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
   const projetos = [
     {
       id: 1,
-      titulo: 'Bancada de Cozinha Premium',
-      categoria: 'Bancadas',
-      imagem: '../../public/images/image-6.jpeg',
-      descricao: 'Bancada em mármore Carrara com acabamento polido para cozinha gourmet.'
+      titulo: ' Bancadas Funcionais para Cozinha',
+      categoria: 'Bancadas', 
+      imagem: '../../public/images/Bancadas/Bancadas Funcionais para Cozinha.png',
+      descricao: 'Bancada clara, linear e de superfície sólida otimiza o fluxo de trabalho em cozinha compacta. Ela é multifuncional, integrando pia, área de corte e calha úmida. O design visa eficiência, modernidade e amplitude.'
     },
-    {
+  {
       id: 2,
-      titulo: 'Bancada de Sala de Estar',
+      titulo: 'Bancada de Banheiro em Quartzo Branco com Cuba Esculpida',
       categoria: 'Bancadas',
-      imagem: '../../public/images/image-4.jpeg',
-      descricao: 'Bancada de Sala de Estar.'
+      imagem: '../../public/images/Bancadas/Bancada de Banheiro em Quartzo Branco com Cuba Esculpida.jpg',
+      descricao: 'Apresentamos uma bancada de banheiro em quartzo branco, com cuba esculpida integrada e design moderno. O acabamento clean e as linhas retas proporcionam um visual sofisticado e funcional, ideal para otimizar espaços e adicionar um toque de elegância a qualquer banheiro ou lavabo.'
     },
     {
       id: 3,
-      titulo: 'Escada de Mármore Branco',
-      categoria: 'Escadas',
-      imagem: 'https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      descricao: 'Escada principal em mármore branco com corrimão integrado.'
+      titulo: 'Bancada de Banheiro  com Armário em Madeira Clara',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Bancada de Banheiro Suspensa com Lavatorio.jpg',
+      descricao: 'Bancada de banheiro suspensa branca instalada com cuba de apoio retangular e torneira cromada. O móvel inferior em madeira clara possui gavetas e nichos abertos. O projeto combina funcionalidade, design moderno e clean para otimizar o espaço e adicionar aconchego.'
     },
     {
       id: 4,
-      titulo: 'Revestimento de Parede',
-      categoria: 'Revestimentos',
-      imagem: 'https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      descricao: 'Revestimento decorativo em mármore para parede da recepção.'
+      titulo: 'Bancada de Cozinha / Área Gourmet em Mármore com Cuba Esculpida',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Bancada de Cozinha.jpeg',
+      descricao: 'Apresentamos a instalação de uma bancada robusta e elegante em mármore cinza com veios marcantes, featuring uma cuba esculpida integrada. O design inclui um frontão alto e uma área de trabalho estendida, ideal para cozinhas ou áreas gourmet que buscam sofisticação, durabilidade e um toque contemporâneo.'
     },
     {
       id: 5,
-      titulo: 'Bancada',
+      titulo: ' Bancada de Granito Preto com Cuba Esculpida',
       categoria: 'Bancadas',
-      imagem: '../../public/images/image-5.jpeg',
-      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
-    },
-    {
-      id: 6,
-      titulo: 'Lareira em Mármore',
-      categoria: 'Revestimentos',
-      imagem: 'https://images.pexels.com/photos/1571471/pexels-photo-1571471.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      descricao: 'Revestimento especial para lareira em mármore escuro.'
+      imagem: '../../public/images/Bancadas/Bancada de Granito Preto com Cuba Esculpida.png',
+      descricao: 'Bancada de granito Preto com cuba esculpida e prateleira integrada. O acabamento polido oferece elegância e funcionalidade duradoura para cozinhas ou áreas de serviço, destacando a beleza natural da pedra.'
     },
     {
       id: 7,
-      titulo: 'Mesa em Mármore',
-      categoria: 'Móveis',
-      imagem: 'https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      descricao: 'Mesa de jantar personalizada em mármore com base de ferro.'
+      titulo: ' Bancada de Serviço em Quartzo Cinza com Cuba Esculpida',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Bancada de Serviço em Quartzo Cinza com Cuba Esculpida.png',
+      descricao: 'Instalação de bancada de serviço em quartzo cinza claro, projetada com cuba esculpida e uma prateleira inferior integrada. Este design oferece funcionalidade e um acabamento minimalista, ideal para lavabos ou áreas de serviço que buscam otimização de espaço e durabilidade.'
     },
     {
       id: 8,
-      titulo: 'Soleira em Mármore',
-      categoria: 'Detalhes',
-      imagem: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      descricao: 'Soleiras e detalhes arquitetônicos em mármore.'
+      titulo: ' Bancada Dupla com Cubas de Apoio',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Bancada Dupla com Cubas de Apoio.png',
+      descricao: 'Bancada dupla de material composto de alta resistência, instalada com duas cubas de apoio. A solução otimiza o espaço e oferece um design moderno, ideal para banheiros e lavabos que buscam praticidade e sofisticação.'
     },
     {
       id: 9,
-      titulo: 'Bancada',
+      titulo: ' Bancada em Granito Preto com Cuba',
       categoria: 'Bancadas',
-      imagem: '../../public/images/image-1.jpeg',
-      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
+      imagem: '../../public/images/Bancadas/Bancada em Granito Preto  com Cuba.png',
+      descricao: ' Instalação de bancada em granito Preto  em formato de "L", com acabamento polido e cuba de aço inoxidável embutida. O granito, conhecido por sua durabilidade e resistência, oferece um visual elegante e funcional para cozinhas e áreas de serviço, harmonizando com o revestimento de parede moderno e o ambiente minimalista.'
     },
     {
       id: 10,
-      titulo: 'Bancada',
+      titulo: 'Bancada Dupla em Granito Preto com Cubas de Inox',
       categoria: 'Bancadas',
-      imagem: '../../public/images/image-2.jpeg',
-      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
+      imagem: '../../public/images/Bancadas/Bancada em Granito Preto com Cubas de Inox.png',
+      descricao: ' Instalação de uma elegante bancada dupla em granito preto, equipada com duas cubas de inox. Este design otimiza o espaço da cozinha ou área de serviço, oferecendo funcionalidade e durabilidade. O contraste do granito escuro com a parede clara proporciona um visual moderno e sofisticado, ideal para ambientes contemporâneos.'
     },
     {
       id: 11,
-      titulo: 'Bancada',
+      titulo: 'Bancada Funcional em Quartzito Cinza',
       categoria: 'Bancadas',
-      imagem: '../../public/images/image-3.jpeg',
-      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
+      imagem: '../../public/images/Bancadas/Bancada em Quartzito Cinza.jpg',
+      descricao: 'Instalação de bancada em quartzito cinza na área de serviço, projetada para oferecer durabilidade e praticidade. O design monolítico com caimento para o chão e as torneiras embutidas maximizam o espaço útil, criando um ambiente funcional e esteticamente clean, ideal para as demandas de uma lavanderia moderna.'
     },
     {
       id: 12,
-      titulo: 'Bancada',
+      titulo: ' Bancada em Quartzo Stellar Black',
       categoria: 'Bancadas',
-      imagem: '../../public/images/image-7.jpeg',
-      descricao: 'Conjunto completo para banheiro com bancada e revestimento.'
-    }
+      imagem: '../../public/images/Bancadas/Bancada em Quartzo Stellar Black.png',
+      descricao: 'Instalação de bancada em quartzo Stellar Black com formato "U". O material de alta resistência e baixa porosidade oferece durabilidade e fácil manutenção, adicionando luxo e sofisticação à cozinha moderna.'
+    },
+    {
+      id: 13,
+      titulo: ' Instalação de Bancada em Quartzo',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Bancada em Quartzo.png',
+      descricao: 'Projeto e instalação de bancada em quartzo branco com detalhes salpicados, equipada com cuba de lavagem e cooktop. O design funcional complementa o revestimento cerâmico tipo "subway tile", criando um ambiente moderno e de fácil manutenção para cozinhas e áreas gourmet.'
+    },
+    {
+      id: 14,
+      titulo: 'Bancada Suspensa com Cuba Esculpida e Design Minimalista',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Bancada Suspensa com Cuba Esculpida e Design Minimalista.png',
+      descricao: 'Bancada suspensa de material sólido branco, com cuba esculpida integrada e furação para torneira de parede. O design minimalista utiliza as laterais como suporte, promovendo uma estética limpa e moderna. A solução é ideal para otimizar o espaço, facilitar a limpeza e adicionar sofisticação ao banheiro.'
+    },
+    {
+      id: 15,
+      titulo: ' Bancada Suspensa com Cuba Esculpida em Mármore Verde Exótico',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Bancada Suspensa com Cuba Esculpida em Mármore Verde Exótico.jpg',
+      descricao: ' Fabricação e instalação de uma bancada suspensa em mármore verde exótico, apresentando uma cuba esculpida no próprio material. Os veios marcantes e as tonalidades únicas da pedra criam uma peça central sofisticada e funcional, ideal para lavabos e banheiros modernos que buscam um toque de luxo e originalidade.'
+    },
+    {
+      id: 16,
+      titulo: 'Bancada de Cozinhaem Granito',
+      categoria: 'Bancadas',
+      imagem: '../../public/images/Bancadas/Cozinha Moderna com Bancadas em Granito.png',
+      descricao: 'Este projeto de cozinha exemplifica a integração de funcionalidade e estética através de bancadas robustas em granito escuro. O design em L maximiza o espaço de trabalho, incorporando uma pia dupla e áreas de preparo, ideal para ambientes contemporâneos. A escolha do granito oferece durabilidade e uma superfície de fácil manutenção, ao mesmo tempo em que confere um toque de sofisticação e modernidade ao ambiente.'
+    },
   ];
 
   const [filtroAtivo, setFiltroAtivo] = useState('Todos');
@@ -145,19 +166,26 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
   };
 
   const navegarModal = (direcao: 'anterior' | 'proximo') => {
-    if (imagemModal === null) return;
-    
-    const indiceAtual = projetos.findIndex(p => p.id === imagemModal);
-    let novoIndice;
-    
-    if (direcao === 'anterior') {
-      novoIndice = indiceAtual > 0 ? indiceAtual - 1 : projetos.length - 1;
-    } else {
-      novoIndice = indiceAtual < projetos.length - 1 ? indiceAtual + 1 : 0;
-    }
-    
-    setImagemModal(projetos[novoIndice].id);
-  };
+  if (imagemModal === null) return;
+
+  // Primeiro, filtra os projetos da categoria atual
+  const categoriaAtual = projetos.find(p => p.id === imagemModal)?.categoria;
+  if (!categoriaAtual) return;
+
+  const projetosFiltrados = projetos.filter(p => p.categoria === categoriaAtual);
+
+  // Agora busca o índice dentro da lista filtrada
+  const indiceAtual = projetosFiltrados.findIndex(p => p.id === imagemModal);
+  let novoIndice = indiceAtual;
+
+  if (direcao === 'anterior' && indiceAtual > 0) {
+    novoIndice = indiceAtual - 1;
+  } else if (direcao === 'proximo' && indiceAtual < projetosFiltrados.length - 1) {
+    novoIndice = indiceAtual + 1;
+  }
+
+  setImagemModal(projetosFiltrados[novoIndice].id);
+};
 
   const projetoModal = projetos.find(p => p.id === imagemModal);
 
