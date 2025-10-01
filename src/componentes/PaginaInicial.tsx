@@ -14,13 +14,8 @@ const PaginaInicial: React.FC<PaginaInicialProps> = ({ id, onNavigate }) => {
   // Para trocar as imagens do carrossel, substitua as URLs abaixo pelas suas imagens
   // Recomendação: Use imagens com resolução mínima de 1920x1080px
   const imagensCarrossel = [
-   '../../public/images/image-1.jpeg',
-   '../../public/images/image-2.jpeg',
-   '../../public/images/image-3.jpeg',
-   '../../public/images/image-4.jpeg',
-   '../../public/images/image-5.jpeg',
-    '../../public/images/image-6.jpeg',
-    '../../public/images/image-7.jpeg',
+  '../../public/images/Area de lazer/Balcão Iluminado em Ônix para Bar.png',
+  '../../public/images/Bancadas/Cozinha Moderna com Bancadas em Granito.png'
   ];
 
   // Estado para controlar qual imagem está ativa no carrossel
