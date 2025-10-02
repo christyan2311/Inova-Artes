@@ -97,18 +97,12 @@ const Cabecalho: React.FC<CabecalhoProps> = ({ secaoAtiva, onSecaoChange }) => {
               >
                 {item.label}
               </button>
-            ))}
+            ))} 
           </nav>
         </div>
       </div>
 
       {/* Overlay para fechar menu quando clicar fora (mobile) */}
-      {menuMobileAberto && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-20 z-40 md:hidden"
-          onClick={() => setMenuMobileAberto(false)}
-        ></div>
-      )}
     </header>
   );
 };
