@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Cabecalho from './componentes/Cabecalho';
 import PaginaInicial from './componentes/PaginaInicial';
 import SobreNos from './componentes/SobreNos';
