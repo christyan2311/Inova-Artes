@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, MessageSquare, Gem } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, MessageSquare } from 'lucide-react';
 
 interface RodapeProps {
   onNavigate: (secaoId: string) => void;
