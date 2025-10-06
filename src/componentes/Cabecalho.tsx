@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Gem, X } from "lucide-react";
+import { X } from "lucide-react";
 
 interface CabecalhoProps {
   secaoAtiva: string;
