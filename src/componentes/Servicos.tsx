@@ -96,7 +96,7 @@ const Servicos: React.FC<ServicosProps> = ({ id, onNavigate }) => {
 
         {/* Seção de processo */}
         <section className="bg-white rounded-2xl p-12 shadow-xl">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Como Trabalhamos</h3>
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Como nós trabalhamos</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
