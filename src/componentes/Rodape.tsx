@@ -16,12 +16,16 @@ const Rodape: React.FC<RodapeProps> = ({ onNavigate }) => {
           {/* Informações da empresa */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <Gem className="w-7 h-7 text-white" />
+              <div className="w-20 h-20 bg-gradient-to-br bg-gray-900 rounded-lg flex items-center justify-center">
+                <img
+                src="/public/images/Logo/Modern Logo for Inova Artes - Minimalist Design (1).png"
+                alt="Logo InovaArtes"
+                className="w-24 h-24 object-contain"
+              />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Inova Artes</h3>
-                <p className="text-orange-400">Marmoraria</p>
+                <p className="font-bold">Marmoraria</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
