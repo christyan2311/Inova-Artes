@@ -180,7 +180,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       descricao:
         "Instalação de lareira e coluna central revestidas em granito Black Cosmic, destacando seus veios brancos marcantes sobre o fundo escuro. O projeto integra uma lareira de tijolos e nichos laterais, criando um ponto focal imponente e elegante. O contraste do granito com o ambiente minimalista e a porta de madeira ao fundo adicionam sofisticação e modernidade ao espaço",
     },
-    
+
     //Ilhas
     {
       id: 14,
@@ -192,7 +192,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         "Apresentamos um projeto de cozinha gourmet com ilha central em mármore de alta qualidade, equipada com cuba dupla.",
     },
     {
-      id: 18,
+      id: 43,
       titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
       categoria: "Ilhas",
       imagem:
