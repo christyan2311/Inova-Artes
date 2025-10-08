@@ -34,7 +34,7 @@ const SobreNos: React.FC<SobreNosProps> = ({ id }) => {
           </div>
           <div className="relative">
             <img 
-              src="/public/images/Ilhas/Cozinha Integrada com Ilha em Mármore e Design Contemporâneo.png" 
+              src="" 
               alt="Equipe Inova Artes trabalhando"
               className="rounded-2xl shadow-xl w-full"
             />

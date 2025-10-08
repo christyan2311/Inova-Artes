@@ -186,7 +186,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Cozinha Integrada com Ilha em Mármore",
       categoria: "Ilhas",
       imagem:
-        "../../public/images/Ilhas/Cozinha Gourmet com Ilha em Mármore e Design Integrado.png",
+        "/images/ilhas/cozinha_gourmet_com_ilha_em_mármore_e_design_integrado.png",
       descricao:
         "Apresentamos um projeto de cozinha gourmet com ilha central em mármore de alta qualidade, equipada com cuba dupla.",
     },
@@ -195,7 +195,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
       categoria: "Ilhas",
       imagem:
-        "../../public/images/Bancadas/Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta.jpg",
+        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_mármore_calacatta.jpg",
       descricao:
         " Instalação de ilha gourmet em granito preto absoluto, apresentando um design monolítico e elegante que integra a área de preparo com um balcão de refeições rápidas. O acabamento polido reflete a iluminação do ambiente, enquanto a durabilidade do material garante funcionalidade e sofisticação para cozinhas contemporâneas.",
     },
@@ -203,7 +203,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 30,
       titulo: " Ilha Gourmet em Granito Preto",
       categoria: "Ilhas",
-      imagem: "../../public/images/Ilhas/Ilha Gourmet em Granito Preto.png",
+      imagem: "/images/ilhas/ilha_gourmet_em_granito_preto.png",
       descricao:
         "Ilha de cozinha em quartzo branco com cuba integrada e design minimalista. A peça central otimiza o espaço, oferecendo funcionalidade e um visual clean, ideal para cozinhas modernas e elegantes.",
     },
@@ -310,7 +310,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Cuba Esculpida em Mármore Verde Exótico",
       categoria: "Cubas",
       imagem:
-        "../../public/images/Cubas/Cuba Esculpida em Mármore Verde Exótico.png",
+        "/images/cubas/cuba_esculpida_em_mármore_verde_exótico.png",
       descricao:
         " Apresentamos uma cuba esculpida em mármore verde com veios marcantes, caracterizada por seu design retangular monolítico. Esta peça exclusiva combina a beleza natural da pedra com a precisão da lapidação, ideal para projetos que buscam um elemento de destaque e sofisticação em banheiros ou lavabos.",
     },
@@ -319,7 +319,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Cuba Esculpida em Ônix Translúcido",
       categoria: "Cubas",
       imagem:
-        "../../public/images/Cubas/Cuba Esculpida em Ônix Translúcido.png",
+        "/images/cubas/cuba_esculpida_em_ônix_translúcido.png",
       descricao:
         " Fabricação e design de cuba esculpida em ônix translúcido, destacando os veios naturais em tons de dourado e creme que conferem exclusividade e luxo. A peça, com sua forma geométrica e acabamento impecável, é ideal para lavabos e banheiros sofisticados, onde a beleza da pedra se torna o ponto focal do ambiente.",
     },
