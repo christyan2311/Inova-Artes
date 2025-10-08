@@ -15,7 +15,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada Iluminada em Ônix para Bar",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/area_de_lazer/Balcão Iluminado em Ônix para Bar.png",
+        "/images/area_de_lazer/balcao_iluminado_em_onix_para_bar.png",
       descricao:
         "Este projeto de design de interiores apresenta um balcão central imponente, revestido em ônix retroiluminado, criando um ponto focal dramático e elegante. A iluminação interna realça a translucidez e os veios naturais da pedra, conferindo um ambiente sofisticado e acolhedor, ideal para bares ou áreas de entretenimento de alto padrão. Complementado por uma estante com bebidas e detalhes em tons vibrantes, este espaço exala modernidade e exclusividade.",
     },
@@ -24,7 +24,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bar de Bar Retroiluminado em Ônix Translúcido",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/area_de_lazer/Bar Retroiluminado em Ônix Translúcido.jpg",
+        "/images/area_de_lazer/bar_retroiluminado_em_onix_translúcido.jpg",
       descricao:
         "Fabricação e instalação de um elegante bar retroiluminado em ônix translúcido, destacando os padrões naturais e a luminosidade única da pedra. Este design proporciona um ponto focal sofisticado e um ambiente acolhedor, ideal para espaços de entretenimento e eventos de alto padrão.",
     },
@@ -32,7 +32,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 8,
       titulo: "Bancada de Cozinha / Área Gourmet em Mármore com Cuba Esculpida",
       categoria: "Bancadas",
-      imagem: "../../public/images/bancadas/Bancada de Cozinha.jpeg",
+      imagem: "/images/bancadas/bancada_de_cozinha.jpeg",
       descricao:
         "Apresentamos a instalação de uma bancada robusta e elegante em mármore cinza com veios marcantes, featuring uma cuba esculpida integrada. O design inclui um frontão alto e uma área de trabalho estendida, ideal para cozinhas ou áreas gourmet que buscam sofisticação, durabilidade e um toque contemporâneo.",
     },
@@ -41,7 +41,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada de Granito Preto com Cuba Esculpida",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancada de Granito Preto com Cuba Esculpida.png",
+        "/images/bancadas/bancada_de_granito_preto_com_cuba_esculpida.png",
       descricao:
         "Bancada de granito Preto com cuba esculpida e prateleira integrada. O acabamento polido oferece elegância e funcionalidade duradoura para cozinhas ou áreas de serviço, destacando a beleza natural da pedra.",
     },
@@ -50,7 +50,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada de Serviço em Quartzo Cinza com Cuba Esculpida",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancada de Serviço em Quartzo Cinza com Cuba Esculpida.png",
+        "/images/bancadas/bancada_de_servico_em_quartzo_cinza_com_cuba_esculpida.png",
       descricao:
         "Instalação de bancada de serviço em quartzo cinza claro, projetada com cuba esculpida e uma prateleira inferior integrada. Este design oferece funcionalidade e um acabamento minimalista, ideal para lavabos ou áreas de serviço que buscam otimização de espaço e durabilidade.",
     },
@@ -59,7 +59,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada em Granito Preto com Cuba",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancada em Granito Preto  com Cuba.png",
+        "/images/bancadas/bancada_em_granito_preto_com_cuba.png",
       descricao:
         ' Instalação de bancada em granito Preto  em formato de "L", com acabamento polido e cuba de aço inoxidável embutida. O granito, conhecido por sua durabilidade e resistência, oferece um visual elegante e funcional para cozinhas e áreas de serviço, harmonizando com o revestimento de parede moderno e o ambiente minimalista.',
     },
@@ -68,7 +68,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada Dupla em Granito Preto com Cubas de Inox",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancada em Granito Preto com Cubas de Inox.png",
+        "/images/bancadas/bancada_em_granito_preto_com_cubas_de_inox.png",
       descricao:
         " Instalação de uma elegante bancada dupla em granito preto, equipada com duas cubas de inox. Este design otimiza o espaço da cozinha ou área de serviço, oferecendo funcionalidade e durabilidade. O contraste do granito escuro com a parede clara proporciona um visual moderno e sofisticado, ideal para ambientes contemporâneos.",
     },
@@ -76,7 +76,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 24,
       titulo: "Bancada Funcional em Quartzito Cinza",
       categoria: "Bancadas",
-      imagem: "../../public/images/bancadas/Bancada em Quartzito Cinza.jpg",
+      imagem: "/images/bancadas/bancada_em_quartzito_cinza.jpg",
       descricao:
         "Instalação de bancada em quartzito cinza na área de serviço, projetada para oferecer durabilidade e praticidade. O design monolítico com caimento para o chão e as torneiras embutidas maximizam o espaço útil, criando um ambiente funcional e esteticamente clean, ideal para as demandas de uma lavanderia moderna.",
     },
@@ -85,7 +85,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada em Quartzo Stellar Black",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancada em Quartzo Stellar Black.png",
+        "/images/bancadas/bancada_em_quartzo_stellar_black.png",
       descricao:
         'Instalação de bancada em quartzo Stellar Black com formato "U". O material de alta resistência e baixa porosidade oferece durabilidade e fácil manutenção, adicionando luxo e sofisticação à cozinha moderna.',
     },
@@ -93,7 +93,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 39,
       titulo: " Instalação de Bancada em Quartzo",
       categoria: "Bancadas",
-      imagem: "../../public/images/bancadas/Bancada em Quartzo.png",
+      imagem: "/images/bancadas/bancada_em_quartzo.png",
       descricao:
         'Projeto e instalação de bancada em quartzo branco com detalhes salpicados, equipada com cuba de lavagem e cooktop. O design funcional complementa o revestimento cerâmico tipo "subway tile", criando um ambiente moderno e de fácil manutenção para cozinhas e áreas gourmet.',
     },
@@ -102,7 +102,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada Suspensa com Cuba Esculpida e Design Minimalista",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancada Suspensa com Cuba Esculpida e Design Minimalista.png",
+        "/images/bancadas/bancada_suspensa_com_cuba_esculpida_e_design_minimalista.png",
       descricao:
         "Bancada suspensa de material sólido branco, com cuba esculpida integrada e furação para torneira de parede. O design minimalista utiliza as laterais como suporte, promovendo uma estética limpa e moderna. A solução é ideal para otimizar o espaço, facilitar a limpeza e adicionar sofisticação ao banheiro.",
     },
@@ -111,7 +111,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada Suspensa com Cuba Esculpida em Mármore Verde Exótico",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancada Suspensa com Cuba Esculpida em Mármore Verde Exótico.jpg",
+        "/images/bancadas/bancada_suspensa_com_cuba_esculpida_em_marmore_verde_exotico.jpg",
       descricao:
         " Fabricação e instalação de uma bancada suspensa em mármore verde exótico, apresentando uma cuba esculpida no próprio material. Os veios marcantes e as tonalidades únicas da pedra criam uma peça central sofisticada e funcional, ideal para lavabos e banheiros modernos que buscam um toque de luxo e originalidade.",
     },
@@ -120,7 +120,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada de Cozinha em Granito",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Cozinha Moderna com Bancadas em Granito.png",
+        "/images/bancadas/cozinha_moderna_com_bancadas_em_granito.png",
       descricao:
         "Este projeto de cozinha exemplifica a integração de funcionalidade e estética através de bancadas robustas em granito escuro. O design em L maximiza o espaço de trabalho, incorporando uma pia dupla e áreas de preparo, ideal para ambientes contemporâneos. A escolha do granito oferece durabilidade e uma superfície de fácil manutenção, ao mesmo tempo em que confere um toque de sofisticação e modernidade ao ambiente.",
     },
@@ -129,7 +129,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancadas Funcionais para Cozinha",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Bancadas Funcionais para Cozinha.png",
+        "/images/bancadas/bancadas_funcionais_para_cozinha.png",
       descricao:
         "Bancada clara, linear e de superfície sólida otimiza o fluxo de trabalho em cozinha compacta. Ela é multifuncional, integrando pia, área de corte e calha úmida. O design visa eficiência, modernidade e amplitude.",
     },
@@ -139,7 +139,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         "Cozinha Gourmet com Bancadas e Backsplash em Granito Preto Via Láctea",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Cozinha Gourmet com Bancadas e Backsplash em Granito Preto Via Láctea.png",
+        "/images/bancadas/cozinha_gourmet_com_bancadas_e_backsplash_em_granito_preto_via_lactea.png",
       descricao:
         "Instalação de bancadas e backsplash em granito Preto Via Láctea, apresentando elegantes veios brancos que adicionam um toque de sofisticação. O projeto inclui cubas duplas embutidas e uma lixeira de bancada, otimizando a funcionalidade para uma cozinha gourmet. Os armários em tons neutros complementam o granito, criando um ambiente moderno e de alto padrão.",
     },
