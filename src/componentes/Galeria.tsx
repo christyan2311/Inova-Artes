@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, AlertTriangle } from "lucide-react";
 
 interface GaleriaProps {
   id: string;
@@ -291,7 +291,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Mesa de Jantar com Tampo Orgânico em Mármore Exótico",
       categoria: "Mesas",
       imagem:
-        "../../public/images/Mesas/Mesa de Jantar com Tampo Orgânico em Mármore Exótico.png",
+        "/public/images/mesas/mesa_de_ jantar_com_tampo_ orgânico_em_mármore_exótico.png",
       descricao:
         "Fabricação e instalação de uma mesa de jantar exclusiva com tampo em mármore exótico de formato orgânico, apoiado sobre uma base cilíndrica. O design contemporâneo e as variações de veios do mármore criam uma peça central única, combinando arte e funcionalidade, ideal para salas de jantar que buscam sofisticação e originalidade.",
     },
@@ -300,7 +300,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Mesa de Jantar em Granito Nero Portoro com Design Exclusivo",
       categoria: "Mesas",
       imagem:
-        "../../public/images/Mesas/Mesa de Jantar em Granito Nero Portoro com Design Exclusivo.png",
+        "/public/images/mesas/mesa de jantar em granito nero portoro com design exclusivo.png",
       descricao:
         " Fabricação e instalação de uma mesa de jantar personalizada em granito Nero Portoro, destacando seus veios dourados únicos que conferem luxo e sofisticação. O design robusto da base e o tampo polido criam um ponto focal impressionante em um ambiente de sala de jantar espaçoso e contemporâneo, harmonizando com a iluminação pendente moderna e as cadeiras de madeira.",
     },
