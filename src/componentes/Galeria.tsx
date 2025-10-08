@@ -143,16 +143,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       descricao:
         "Instalação de bancadas e backsplash em granito Preto Via Láctea, apresentando elegantes veios brancos que adicionam um toque de sofisticação. O projeto inclui cubas duplas embutidas e uma lixeira de bancada, otimizando a funcionalidade para uma cozinha gourmet. Os armários em tons neutros complementam o granito, criando um ambiente moderno e de alto padrão.",
     },
-    {
-      id: 18,
-      titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
-      categoria: "Bancadas",
-      imagem:
-        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_marmore_calacatta.jpg",
-      descricao:
-        "Projeto de cozinha com bancada em granito Branco Dallas, destacando veios cinza que conferem elegância e modernidade ao ambiente. A bancada é equipada com cuba dupla embutida e torneira de parede, otimizando o espaço de trabalho. O design clean e funcional é complementado por armários brancos, criando um ambiente sofisticado e prático para o dia a dia.",
-    },
-
+  
     //Area de Lazer
     {
       id: 2,
@@ -215,7 +206,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada Dupla com Cubas de Apoio",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Bancadas/Bancada Dupla com Cubas de Apoio.png",
+        "/images/banheiros_e_lavatorios/bancada_dupla_com_cubas_de_apoio.png",
       descricao:
         "Bancada dupla de material composto de alta resistência, instalada com duas cubas de apoio. A solução otimiza o espaço e oferece um design moderno, ideal para banheiros e lavabos que buscam praticidade e sofisticação.",
     },
@@ -225,7 +216,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada de Banheiro em Quartzo Branco com Cuba Esculpida",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Bancadas/Bancada de Banheiro em Quartzo Branco com Cuba Esculpida.jpg",
+        "/images/banheiros_e_lavatorios/bancada_de_banheiro_em_quartzo_branco_com_cuba_esculpida.jpg",
       descricao:
         "Apresentamos uma bancada de banheiro em quartzo branco, com cuba esculpida integrada e design moderno. O acabamento clean e as linhas retas proporcionam um visual sofisticado e funcional, ideal para otimizar espaços e adicionar um toque de elegância a qualquer banheiro ou lavabo.",
     },
@@ -235,7 +226,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada de Banheiro com Cuba Esculpida",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Banheiros-Lavatorios/Bancada de Banheiro com Cuba Esculpida.png",
+        "/images/banheiros_e_lavatorios/bancada_de_banheiro_com_cuba_esculpida.png",
       descricao:
         " Apresentamos uma bancada de banheiro moderna em tom claro, com cuba esculpida de design inovador e torneira cromada. A peça se integra perfeitamente ao ambiente, otimizando o espaço e oferecendo uma estética limpa e contemporânea. Ideal para projetos que buscam funcionalidade com um toque de sofisticação.",
     },
@@ -244,7 +235,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Banheiro com Design em Mármore Black & White",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Banheiros-Lavatorios/Banheiro com Design em Mármore Black & White.png",
+        "/images/banheiros_e_lavatorios/banheiro_com_design_em_marmore_black_white.png",
       descricao:
         "Instalação de um elegante banheiro com um design ousado em mármore, combinando peças brancas com veios cinzas nas paredes e um piso que intercala veios pretos sobre o branco. A bancada em mármore claro com cuba embutida e a iluminação moderna realçam a sofisticação do ambiente, criando um espaço contemporâneo e de alto impacto visual.",
     },
@@ -253,7 +244,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Banheiro Luxuoso com Revestimento em Mármore Verde Esmeralda",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Banheiros-Lavatorios/Banheiro Luxuoso com Revestimento em Mármore Verde Esmeralda.jpg",
+        "/images/banheiros_e_lavatorios/banheiro_luxuoso_com_revestimento_em_marmore_verde_esmeralda.jpg",
       descricao:
         "Projeto e execução de um banheiro sofisticado com revestimento integral em mármore verde esmeralda. A bancada suspensa com cuba embutida destaca a beleza dos veios naturais da pedra, complementada por um espelho elegante e uma iluminação que realça a textura e a profundidade do material, criando um ambiente de requinte e serenidade.",
     },
@@ -262,7 +253,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Banheiro Moderno com Cuba de Apoio e Armário Planejado",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Banheiros-Lavatorios/Banheiro Moderno com Cuba de Apoio.png",
+        "/images/banheiros_e_lavatorios/banheiro_moderno_com_cuba_de_apoio.png",
       descricao:
         "Apresentamos um projeto de banheiro elegante e funcional, destacando a cuba de apoio quadrada sobre uma bancada em tom claro e um armário inferior planejado com portas lisas. A iluminação indireta sob o espelho e a prateleira superior complementam o ambiente, proporcionando um toque contemporâneo e otimizando o espaço.",
     },
@@ -271,7 +262,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Lavabo de Luxo com Cuba Esculpida em Quartzo Branco",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Banheiros-Lavatorios/Lavabo de Luxo com Cuba Esculpida em Quartzo Branco.png",
+        "/images/banheiros_e_lavatorios/lavabo_de_luxo_com_cuba_esculpida_em_quartzo_branco.png",
       descricao:
         "Apresentamos um lavabo sofisticado, com bancada em quartzo branco e cuba esculpida de design contemporâneo. A torneira em tom bronze complementa o ambiente luxuoso, realçado pelo revestimento de parede e piso em porcelanato com veios que imitam mármore. Uma prateleira lateral estendida oferece funcionalidade e elegância, ideal para um espaço requintado e moderno.",
     },
@@ -281,7 +272,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Lavatório Duplo em Mármore Panda Branco e Preto",
       categoria: "Banheiros / Lavatorios",
       imagem:
-        "../../public/images/Banheiros-Lavatorios/Lavatório Duplo em Mármore Panda Branco e Preto.png",
+        "/images/banheiros_e_lavatorios/lavatorio_duplo_em_marmore_panda_branco_e_preto.png",
       descricao:
         "Fabricação e instalação de um lavatório duplo em mármore Panda Branco e Preto, com um design personalizado que harmoniza os veios marcantes de ambas as pedras. A cuba esculpida e a prateleira inferior funcional complementam o espelho e a iluminação embutida, criando um ambiente de banheiro luxuoso e com forte impacto visual.",
     },
