@@ -148,7 +148,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
       categoria: "Bancadas",
       imagem:
-        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_mármore_calacatta.jpg",
+        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_marmore_calacatta.jpg",
       descricao:
         "Projeto de cozinha com bancada em granito Branco Dallas, destacando veios cinza que conferem elegância e modernidade ao ambiente. A bancada é equipada com cuba dupla embutida e torneira de parede, otimizando o espaço de trabalho. O design clean e funcional é complementado por armários brancos, criando um ambiente sofisticado e prático para o dia a dia.",
     },
@@ -180,6 +180,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       descricao:
         "Instalação de lareira e coluna central revestidas em granito Black Cosmic, destacando seus veios brancos marcantes sobre o fundo escuro. O projeto integra uma lareira de tijolos e nichos laterais, criando um ponto focal imponente e elegante. O contraste do granito com o ambiente minimalista e a porta de madeira ao fundo adicionam sofisticação e modernidade ao espaço",
     },
+    
     //Ilhas
     {
       id: 14,
