@@ -144,11 +144,11 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         "Instalação de bancadas e backsplash em granito Preto Via Láctea, apresentando elegantes veios brancos que adicionam um toque de sofisticação. O projeto inclui cubas duplas embutidas e uma lixeira de bancada, otimizando a funcionalidade para uma cozinha gourmet. Os armários em tons neutros complementam o granito, criando um ambiente moderno e de alto padrão.",
     },
     {
-      id: 17,
+      id: 18,
       titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/bancadas/Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta.jpg",
+        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_mármore_calacatta.jpg",
       descricao:
         "Projeto de cozinha com bancada em granito Branco Dallas, destacando veios cinza que conferem elegância e modernidade ao ambiente. A bancada é equipada com cuba dupla embutida e torneira de parede, otimizando o espaço de trabalho. O design clean e funcional é complementado por armários brancos, criando um ambiente sofisticado e prático para o dia a dia.",
     },
