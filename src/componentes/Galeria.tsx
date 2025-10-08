@@ -325,78 +325,79 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
     },
 
     //Materiais
-    {
-      id: 15,
-      titulo: "Patagonia Green (ou Botanic Green): Arte em Cores Naturais",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais/Patagonia Green (ou Botanic Green) Arte em Cores Naturais.jpg",
-      descricao:
-        "Uma peça exótica que combina a base neutra com um design orgânico e vibrante. Seus veios em tons de verde intenso e preto profundo criam um movimento único e sofisticado. Apresentada em Bookmatch (espelhamento), esta rocha é perfeita para revestir paredes, painéis e lareiras, garantindo uma assinatura de design inigualável e durabilidade extrema.",
-    },
-    {
-      id: 23,
-      titulo: "Quartzito Patagonia: Luxo Translúcido com Retroiluminação",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais/Quartzito Patagonia Luxo Translúcido com Retroiluminação.jpg",
-      descricao:
-        "O Quartzito Patagonia é uma verdadeira obra de arte natural, conhecida por sua fusão de minerais: branco, preto e explosões de cristal dourado e âmbar. Sua característica translúcida permite a retroiluminação, transformando a peça em um painel luminoso e dramático. É o material exótico de escolha para halls, bares e ilhas gourmet de alto impacto.",
-    },
-    {
-      id: 38,
-      titulo: "Quartzito Taj Mahal: Beleza Quente e Resistência Superior",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais/Quartzito Taj Mahal Beleza Quente e Resistência Superior.jpg",
-      descricao:
-        "O Quartzito Taj Mahal oferece a estética suave do mármore, mas com a extrema dureza e baixa manutenção do quartzito. Seu fundo branco é sutilmente adornado por veios finos em tons de dourado e marrom claro, adicionando calor e requinte. É a escolha ideal para bancadas de cozinha e áreas gourmet que exigem beleza duradoura e alta resistência a riscos e manchas.",
-    },
-    {
-      id: 31,
-      titulo: "Mármore Calacatta: A Elegância Clássica em Grande Formato",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais/Mármore Calacatta A Elegância Clássica em Grande Formato.jpg",
-      descricao:
-        "O Mármore Calacatta é sinônimo de luxo atemporal. Com um fundo branco puro e veios em diagonal em tons de cinza e preto, esta peça cria um painel visual dramático e harmonioso quando instalada. Perfeito para revestimento de paredes, halls de entrada e banheiros, onde o polimento espelhado realça sua amplitude e sofisticação.",
-    },
-    {
-      id: 35,
-      titulo: "Quartzito Cristallo: O Luxo Translúcido Iluminado",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais/Quartzito Cristallo O Luxo Translúcido Iluminado.jpg",
-      descricao:
-        "O Quartzito Cristallo é uma joia da natureza. Sua característica translúcida permite que a chapa seja retroiluminada, transformando a peça em um espetáculo de luz e brilho. Com veios que variam do âmbar ao ouro, é a definição de luxo e exclusividade, sendo ideal para painéis de destaque, bares e bancadas iluminadas.",
-    },
-    {
-      id: 9,
-      titulo: "Quartzito Mont Blanc (ou Super White): Elegância Cinza Suave",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais/Quartzito Mont Blanc (ou Super White) Elegância Cinza Suave.jpg",
-      descricao:
-        "O Quartzito Mont Blanc é a escolha ideal para um design neutro e sofisticado. Com um fundo claro, variando do branco gelo ao cinza suave, é adornado por veios finos e delicados. Combina a estética clássica do mármore com a durabilidade e a baixa porosidade do quartzito, sendo perfeito para bancadas de cozinhas e banheiros de alto padrão.",
-    },
-    {
-      id: 19,
-      titulo: "Cosmic Black: Profundidade e Movimento",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais/Cosmic Black Profundidade e Movimento.jpg",
-      descricao:
-        "Um padrão de veios sinuosos e turbulentos que cria uma sensação de movimento constante sobre o preto profundo. Esta chapa é a escolha perfeita para quem busca uma estética moderna, oferecendo a força e a resistência do granito com a sofisticação do design natural.",
-    },
-    {
-      id: 29,
-      titulo: "Via Láctea Extra: O Contraste Supremo",
-      categoria: "Materiais",
-      imagem:
-        "../../public/images/Materiais//Via Láctea Extra O Contraste Supremo.jpg",
-      descricao:
-        "Peça de impacto visual incomparável. O fundo preto absoluto é cortado por veios brancos, largos e esculturais, que trazem uma elegância dramática e atemporal ao ambiente. Ideal para ilhas gourmet, lareiras e projetos que exigem um ponto focal de alto luxo e durabilidade superior.",
-    },
+   {
+  id: 15,
+  titulo: "Patagonia Green (ou Botanic Green): Arte em Cores Naturais",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/patagonia_green_arte_em_cores_naturais.jpg",
+  descricao:
+    "Uma peça exótica que combina a base neutra com um design orgânico e vibrante. Seus veios em tons de verde intenso e preto profundo criam um movimento único e sofisticado. Apresentada em Bookmatch (espelhamento), esta rocha é perfeita para revestir paredes, painéis e lareiras, garantindo uma assinatura de design inigualável e durabilidade extrema.",
+},
+{
+  id: 23,
+  titulo: "Quartzito Patagonia: Luxo Translúcido com Retroiluminação",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/quartzito_patagonia_luxo_translúcido_com_retroiluminação.jpg",
+  descricao:
+    "O Quartzito Patagonia é uma verdadeira obra de arte natural, conhecida por sua fusão de minerais: branco, preto e explosões de cristal dourado e âmbar. Sua característica translúcida permite a retroiluminação, transformando a peça em um painel luminoso e dramático. É o material exótico de escolha para halls, bares e ilhas gourmet de alto impacto.",
+},
+{
+  id: 38,
+  titulo: "Quartzito Taj Mahal: Beleza Quente e Resistência Superior",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/quartzito_taj_mahal_beleza_quente_e_resistência_superior.jpg",
+  descricao:
+    "O Quartzito Taj Mahal oferece a estética suave do mármore, mas com a extrema dureza e baixa manutenção do quartzito. Seu fundo branco é sutilmente adornado por veios finos em tons de dourado e marrom claro, adicionando calor e requinte. É a escolha ideal para bancadas de cozinha e áreas gourmet que exigem beleza duradoura e alta resistência a riscos e manchas.",
+},
+{
+  id: 31,
+  titulo: "Mármore Calacatta: A Elegância Clássica em Grande Formato",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/mármore_calacatta_elegância_clássica_em_grande_formato.jpg",
+  descricao:
+    "O Mármore Calacatta é sinônimo de luxo atemporal. Com um fundo branco puro e veios em diagonal em tons de cinza e preto, esta peça cria um painel visual dramático e harmonioso quando instalada. Perfeito para revestimento de paredes, halls de entrada e banheiros, onde o polimento espelhado realça sua amplitude e sofisticação.",
+},
+{
+  id: 35,
+  titulo: "Quartzito Cristallo: O Luxo Translúcido Iluminado",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/quartzito_cristallo_o_luxo_translúcido_iluminado.jpg",
+  descricao:
+    "O Quartzito Cristallo é uma joia da natureza. Sua característica translúcida permite que a chapa seja retroiluminada, transformando a peça em um espetáculo de luz e brilho. Com veios que variam do âmbar ao ouro, é a definição de luxo e exclusividade, sendo ideal para painéis de destaque, bares e bancadas iluminadas.",
+},
+{
+  id: 9,
+  titulo: "Quartzito Mont Blanc (ou Super White): Elegância Cinza Suave",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/quartzito_mont_blanc_elegância_cinza_suave.jpg",
+  descricao:
+    "O Quartzito Mont Blanc é a escolha ideal para um design neutro e sofisticado. Com um fundo claro, variando do branco gelo ao cinza suave, é adornado por veios finos e delicados. Combina a estética clássica do mármore com a durabilidade e a baixa porosidade do quartzito, sendo perfeito para bancadas de cozinhas e banheiros de alto padrão.",
+},
+{
+  id: 19,
+  titulo: "Cosmic Black: Profundidade e Movimento",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/cosmic_black_profundidade_e_movimento.jpg",
+  descricao:
+    "Um padrão de veios sinuosos e turbulentos que cria uma sensação de movimento constante sobre o preto profundo. Esta chapa é a escolha perfeita para quem busca uma estética moderna, oferecendo a força e a resistência do granito com a sofisticação do design natural.",
+},
+{
+  id: 29,
+  titulo: "Via Láctea Extra: O Contraste Supremo",
+  categoria: "Materiais",
+  imagem:
+    "/images/materiais/via_láctea_extra_o_contraste_supremo.jpg",
+  descricao:
+    "Peça de impacto visual incomparável. O fundo preto absoluto é cortado por veios brancos, largos e esculturais, que trazem uma elegância dramática e atemporal ao ambiente. Ideal para ilhas gourmet, lareiras e projetos que exigem um ponto focal de alto luxo e durabilidade superior.",
+},
+
   ];
 
   const [filtroAtivo, setFiltroAtivo] = useState("Todos");
