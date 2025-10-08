@@ -408,16 +408,16 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
     "Materiais",
   ];
 
-  // Detectar se é mobile e adicionar listener de redimensionamento
+   // Detectar se é mobile e adicionar listener de redimensionamento
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
+    
     checkIsMobile();
-    window.addEventListener("resize", checkIsMobile);
-
-    return () => window.removeEventListener("resize", checkIsMobile);
+    window.addEventListener('resize', checkIsMobile);
+    
+    return () => window.removeEventListener('resize', checkIsMobile);
   }, []);
 
   // Resetar estado ao mudar filtro
@@ -425,29 +425,22 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
     setMostrarTodasFotos(false);
   }, [filtroAtivo]);
 
-  const projetosFiltrados =
-    filtroAtivo === "Todos"
-      ? projetos
-      : projetos.filter((projeto) => projeto.categoria === filtroAtivo);
+  const projetosFiltrados = filtroAtivo === 'Todos' 
+    ? projetos 
+    : projetos.filter(projeto => projeto.categoria === filtroAtivo);
 
   // Determinar quantos projetos mostrar
   const projetosExibidos = (() => {
-    if (
-      isMobile &&
-      filtroAtivo === "Todos" &&
-      !mostrarTodasFotos &&
-      projetosFiltrados.length > 5
-    ) {
+    if (isMobile && filtroAtivo === 'Todos' && !mostrarTodasFotos && projetosFiltrados.length > 5) {
       return projetosFiltrados.slice(0, 5);
     }
     return projetosFiltrados;
   })();
 
   // Verificar se deve mostrar o botão "Ver todos"
-  const mostrarBotaoVerTodos =
-    isMobile &&
-    filtroAtivo === "Todos" &&
-    !mostrarTodasFotos &&
+  const mostrarBotaoVerTodos = isMobile && 
+    filtroAtivo === 'Todos' && 
+    !mostrarTodasFotos && 
     projetosFiltrados.length > 5;
   const abrirModal = (id: number) => {
     setImagemModal(id);
@@ -457,50 +450,32 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
     setImagemModal(null);
   };
 
-  const navegarModal = (direcao: "anterior" | "proximo") => {
+  const navegarModal = (direcao: 'anterior' | 'proximo') => {
     if (imagemModal === null) return;
-
-    // Primeiro, filtra os projetos da categoria atual
-    const categoriaAtual = projetos.find(
-      (p) => p.id === imagemModal
-    )?.categoria;
-    if (!categoriaAtual) return;
-
-    const projetosFiltrados = projetos.filter(
-      (p) => p.categoria === categoriaAtual
-    );
-
-    // Agora busca o índice dentro da lista filtrada
-    const indiceAtual = projetosFiltrados.findIndex(
-      (p) => p.id === imagemModal
-    );
-    let novoIndice = indiceAtual;
-
-    if (direcao === "anterior" && indiceAtual > 0) {
-      novoIndice = indiceAtual - 1;
-    } else if (
-      direcao === "proximo" &&
-      indiceAtual < projetosFiltrados.length - 1
-    ) {
-      novoIndice = indiceAtual + 1;
+    
+    const indiceAtual = projetos.findIndex(p => p.id === imagemModal);
+    let novoIndice;
+    
+    if (direcao === 'anterior') {
+      novoIndice = indiceAtual > 0 ? indiceAtual - 1 : projetos.length - 1;
+    } else {
+      novoIndice = indiceAtual < projetos.length - 1 ? indiceAtual + 1 : 0;
     }
-
-    setImagemModal(projetosFiltrados[novoIndice].id);
+    
+    setImagemModal(projetos[novoIndice].id);
   };
 
-  const projetoModal = projetos.find((p) => p.id === imagemModal);
+  const projetoModal = projetos.find(p => p.id === imagemModal);
 
   return (
     <div id={id} className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Nossa Galeria
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa Galeria</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Conheça alguns dos nossos projetos realizados e se inspire com a
-            beleza e elegância que o mármore pode proporcionar ao seu ambiente.
+            Conheça alguns dos nossos projetos realizados e se inspire com a beleza 
+            e elegância que o mármore pode proporcionar ao seu ambiente.
           </p>
         </div>
 
@@ -512,8 +487,8 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
               onClick={() => setFiltroAtivo(categoria)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 filtroAtivo === categoria
-                  ? "bg-orange-500 text-white shadow-lg"
-                  : "bg-white text-gray-700 hover:bg-orange-50 hover:text-orange-600 shadow"
+                  ? 'bg-orange-500 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-orange-50 hover:text-orange-600 shadow'
               }`}
             >
               {categoria}
@@ -545,12 +520,8 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {projeto.titulo}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {projeto.descricao}
-                </p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{projeto.titulo}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{projeto.descricao}</p>
               </div>
             </div>
           ))}
@@ -574,49 +545,47 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         {/* Modal para visualização das imagens */}
         {imagemModal && projetoModal && (
           <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
-            <div className="relative max-w-4xl w-full max-h-full">
-              {/* Botão fechar */}
-              <button
-                onClick={fecharModal}
-                className="absolute -top-12 right-0 text-white hover:text-orange-500 transition-colors duration-200"
-              >
-                <X className="w-8 h-8" />
-              </button>
+            {/* Botão fechar - posicionado de forma independente */}
+            <button
+              onClick={fecharModal}
+              className="absolute top-6 right-6 z-50 text-white hover:text-orange-500 transition-colors duration-200 bg-gray-800 bg-opacity-75 hover:bg-opacity-100 rounded-full p-2"
+              title="Fechar"
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            <div className="relative max-w-4xl w-full max-h-[85vh] flex flex-col">
 
               {/* Botões de navegação */}
               <button
-                onClick={() => navegarModal("anterior")}
+                onClick={() => navegarModal('anterior')}
                 className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-500 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 transition-all duration-200"
               >
                 <ChevronLeft className="w-8 h-8" />
               </button>
-
+              
               <button
-                onClick={() => navegarModal("proximo")}
+                onClick={() => navegarModal('proximo')}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-500 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 transition-all duration-200"
               >
                 <ChevronRight className="w-8 h-8" />
               </button>
 
               {/* Imagem */}
-              <div className="bg-white rounded-2xl overflow-hidden">
+              <div className="bg-white rounded-2xl overflow-y-auto flex-grow">
                 <img
                   src={projetoModal.imagem}
                   alt={projetoModal.titulo}
-                  className="w-full h-96 object-cover"
+                  className="w-full max-h-[40vh] md:h-96 object-cover"
                 />
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-2xl font-bold text-gray-900">
-                      {projetoModal.titulo}
-                    </h3>
+                    <h3 className="text-2xl font-bold text-gray-900">{projetoModal.titulo}</h3>
                     <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">
                       {projetoModal.categoria}
                     </span>
                   </div>
-                  <p className="text-gray-600 leading-relaxed">
-                    {projetoModal.descricao}
-                  </p>
+                  <p className="text-gray-600 leading-relaxed">{projetoModal.descricao}</p>
                 </div>
               </div>
             </div>
@@ -630,8 +599,8 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
             <p className="text-xl mb-8 text-orange-100">
               Transforme seu ambiente com a mesma qualidade e sofisticação
             </p>
-            <button
-              onClick={() => onNavigate("contato")}
+            <button 
+              onClick={() => onNavigate('contato')}
               className="bg-white text-orange-600 hover:bg-orange-50 font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Solicitar Orçamento
