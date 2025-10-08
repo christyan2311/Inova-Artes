@@ -32,7 +32,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 8,
       titulo: "Bancada de Cozinha / Área Gourmet em Mármore com Cuba Esculpida",
       categoria: "Bancadas",
-      imagem: "/images/bancadas/bancada_de_cozinha.jpeg",
+      imagem: "/images/bancadas/bancada_de_cozinha.png",
       descricao:
         "Apresentamos a instalação de uma bancada robusta e elegante em mármore cinza com veios marcantes, featuring uma cuba esculpida integrada. O design inclui um frontão alto e uma área de trabalho estendida, ideal para cozinhas ou áreas gourmet que buscam sofisticação, durabilidade e um toque contemporâneo.",
     },
