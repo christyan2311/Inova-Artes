@@ -15,7 +15,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada Iluminada em Ônix para Bar",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Area de lazer/Balcão Iluminado em Ônix para Bar.png",
+        "../../public/images/area_de_lazer/Balcão Iluminado em Ônix para Bar.png",
       descricao:
         "Este projeto de design de interiores apresenta um balcão central imponente, revestido em ônix retroiluminado, criando um ponto focal dramático e elegante. A iluminação interna realça a translucidez e os veios naturais da pedra, conferindo um ambiente sofisticado e acolhedor, ideal para bares ou áreas de entretenimento de alto padrão. Complementado por uma estante com bebidas e detalhes em tons vibrantes, este espaço exala modernidade e exclusividade.",
     },
@@ -24,7 +24,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bar de Bar Retroiluminado em Ônix Translúcido",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Area de lazer/Bar Retroiluminado em Ônix Translúcido.jpg",
+        "../../public/images/area_de_lazer/Bar Retroiluminado em Ônix Translúcido.jpg",
       descricao:
         "Fabricação e instalação de um elegante bar retroiluminado em ônix translúcido, destacando os padrões naturais e a luminosidade única da pedra. Este design proporciona um ponto focal sofisticado e um ambiente acolhedor, ideal para espaços de entretenimento e eventos de alto padrão.",
     },
@@ -32,7 +32,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 8,
       titulo: "Bancada de Cozinha / Área Gourmet em Mármore com Cuba Esculpida",
       categoria: "Bancadas",
-      imagem: "../../public/images/Bancadas/Bancada de Cozinha.jpeg",
+      imagem: "../../public/images/bancadas/Bancada de Cozinha.jpeg",
       descricao:
         "Apresentamos a instalação de uma bancada robusta e elegante em mármore cinza com veios marcantes, featuring uma cuba esculpida integrada. O design inclui um frontão alto e uma área de trabalho estendida, ideal para cozinhas ou áreas gourmet que buscam sofisticação, durabilidade e um toque contemporâneo.",
     },
@@ -41,7 +41,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada de Granito Preto com Cuba Esculpida",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancada de Granito Preto com Cuba Esculpida.png",
+        "../../public/images/bancadas/Bancada de Granito Preto com Cuba Esculpida.png",
       descricao:
         "Bancada de granito Preto com cuba esculpida e prateleira integrada. O acabamento polido oferece elegância e funcionalidade duradoura para cozinhas ou áreas de serviço, destacando a beleza natural da pedra.",
     },
@@ -50,17 +50,16 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada de Serviço em Quartzo Cinza com Cuba Esculpida",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancada de Serviço em Quartzo Cinza com Cuba Esculpida.png",
+        "../../public/images/bancadas/Bancada de Serviço em Quartzo Cinza com Cuba Esculpida.png",
       descricao:
         "Instalação de bancada de serviço em quartzo cinza claro, projetada com cuba esculpida e uma prateleira inferior integrada. Este design oferece funcionalidade e um acabamento minimalista, ideal para lavabos ou áreas de serviço que buscam otimização de espaço e durabilidade.",
     },
-
     {
       id: 32,
       titulo: " Bancada em Granito Preto com Cuba",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancada em Granito Preto  com Cuba.png",
+        "../../public/images/bancadas/Bancada em Granito Preto  com Cuba.png",
       descricao:
         ' Instalação de bancada em granito Preto  em formato de "L", com acabamento polido e cuba de aço inoxidável embutida. O granito, conhecido por sua durabilidade e resistência, oferece um visual elegante e funcional para cozinhas e áreas de serviço, harmonizando com o revestimento de parede moderno e o ambiente minimalista.',
     },
@@ -69,7 +68,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada Dupla em Granito Preto com Cubas de Inox",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancada em Granito Preto com Cubas de Inox.png",
+        "../../public/images/bancadas/Bancada em Granito Preto com Cubas de Inox.png",
       descricao:
         " Instalação de uma elegante bancada dupla em granito preto, equipada com duas cubas de inox. Este design otimiza o espaço da cozinha ou área de serviço, oferecendo funcionalidade e durabilidade. O contraste do granito escuro com a parede clara proporciona um visual moderno e sofisticado, ideal para ambientes contemporâneos.",
     },
@@ -77,7 +76,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 24,
       titulo: "Bancada Funcional em Quartzito Cinza",
       categoria: "Bancadas",
-      imagem: "../../public/images/Bancadas/Bancada em Quartzito Cinza.jpg",
+      imagem: "../../public/images/bancadas/Bancada em Quartzito Cinza.jpg",
       descricao:
         "Instalação de bancada em quartzito cinza na área de serviço, projetada para oferecer durabilidade e praticidade. O design monolítico com caimento para o chão e as torneiras embutidas maximizam o espaço útil, criando um ambiente funcional e esteticamente clean, ideal para as demandas de uma lavanderia moderna.",
     },
@@ -86,7 +85,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada em Quartzo Stellar Black",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancada em Quartzo Stellar Black.png",
+        "../../public/images/bancadas/Bancada em Quartzo Stellar Black.png",
       descricao:
         'Instalação de bancada em quartzo Stellar Black com formato "U". O material de alta resistência e baixa porosidade oferece durabilidade e fácil manutenção, adicionando luxo e sofisticação à cozinha moderna.',
     },
@@ -94,7 +93,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 39,
       titulo: " Instalação de Bancada em Quartzo",
       categoria: "Bancadas",
-      imagem: "../../public/images/Bancadas/Bancada em Quartzo.png",
+      imagem: "../../public/images/bancadas/Bancada em Quartzo.png",
       descricao:
         'Projeto e instalação de bancada em quartzo branco com detalhes salpicados, equipada com cuba de lavagem e cooktop. O design funcional complementa o revestimento cerâmico tipo "subway tile", criando um ambiente moderno e de fácil manutenção para cozinhas e áreas gourmet.',
     },
@@ -103,7 +102,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada Suspensa com Cuba Esculpida e Design Minimalista",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancada Suspensa com Cuba Esculpida e Design Minimalista.png",
+        "../../public/images/bancadas/Bancada Suspensa com Cuba Esculpida e Design Minimalista.png",
       descricao:
         "Bancada suspensa de material sólido branco, com cuba esculpida integrada e furação para torneira de parede. O design minimalista utiliza as laterais como suporte, promovendo uma estética limpa e moderna. A solução é ideal para otimizar o espaço, facilitar a limpeza e adicionar sofisticação ao banheiro.",
     },
@@ -112,7 +111,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancada Suspensa com Cuba Esculpida em Mármore Verde Exótico",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancada Suspensa com Cuba Esculpida em Mármore Verde Exótico.jpg",
+        "../../public/images/bancadas/Bancada Suspensa com Cuba Esculpida em Mármore Verde Exótico.jpg",
       descricao:
         " Fabricação e instalação de uma bancada suspensa em mármore verde exótico, apresentando uma cuba esculpida no próprio material. Os veios marcantes e as tonalidades únicas da pedra criam uma peça central sofisticada e funcional, ideal para lavabos e banheiros modernos que buscam um toque de luxo e originalidade.",
     },
@@ -121,7 +120,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada de Cozinha em Granito",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Cozinha Moderna com Bancadas em Granito.png",
+        "../../public/images/bancadas/Cozinha Moderna com Bancadas em Granito.png",
       descricao:
         "Este projeto de cozinha exemplifica a integração de funcionalidade e estética através de bancadas robustas em granito escuro. O design em L maximiza o espaço de trabalho, incorporando uma pia dupla e áreas de preparo, ideal para ambientes contemporâneos. A escolha do granito oferece durabilidade e uma superfície de fácil manutenção, ao mesmo tempo em que confere um toque de sofisticação e modernidade ao ambiente.",
     },
@@ -130,7 +129,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Bancadas Funcionais para Cozinha",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Bancadas Funcionais para Cozinha.png",
+        "../../public/images/bancadas/Bancadas Funcionais para Cozinha.png",
       descricao:
         "Bancada clara, linear e de superfície sólida otimiza o fluxo de trabalho em cozinha compacta. Ela é multifuncional, integrando pia, área de corte e calha úmida. O design visa eficiência, modernidade e amplitude.",
     },
@@ -140,7 +139,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         "Cozinha Gourmet com Bancadas e Backsplash em Granito Preto Via Láctea",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Cozinha Gourmet com Bancadas e Backsplash em Granito Preto Via Láctea.png",
+        "../../public/images/bancadas/Cozinha Gourmet com Bancadas e Backsplash em Granito Preto Via Láctea.png",
       descricao:
         "Instalação de bancadas e backsplash em granito Preto Via Láctea, apresentando elegantes veios brancos que adicionam um toque de sofisticação. O projeto inclui cubas duplas embutidas e uma lixeira de bancada, otimizando a funcionalidade para uma cozinha gourmet. Os armários em tons neutros complementam o granito, criando um ambiente moderno e de alto padrão.",
     },
@@ -149,7 +148,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
       categoria: "Bancadas",
       imagem:
-        "../../public/images/Bancadas/Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta.jpg",
+        "../../public/images/bancadas/Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta.jpg",
       descricao:
         "Projeto de cozinha com bancada em granito Branco Dallas, destacando veios cinza que conferem elegância e modernidade ao ambiente. A bancada é equipada com cuba dupla embutida e torneira de parede, otimizando o espaço de trabalho. O design clean e funcional é complementado por armários brancos, criando um ambiente sofisticado e prático para o dia a dia.",
     },
@@ -287,21 +286,23 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
     },
     //Mesas
     {
-  id: 12,
-  titulo: "Mesa de Jantar com Tampo Orgânico em Mármore Exótico",
-  categoria: "Mesas",
-  imagem: "/images/mesas/mesa_de_jantar_com_tampo_organico_em_marmore_exotico.png",
-  descricao:
-    "Fabricação e instalação de uma mesa de jantar exclusiva com tampo em mármore exótico de formato orgânico, apoiado sobre uma base cilíndrica. O design contemporâneo e as variações de veios do mármore criam uma peça central única, combinando arte e funcionalidade, ideal para salas de jantar que buscam sofisticação e originalidade.",
-},
-{
-  id: 5,
-  titulo: "Mesa de Jantar em Granito Nero Portoro com Design Exclusivo",
-  categoria: "Mesas",
-  imagem: "/images/mesas/mesa_de_jantar_em_granito_nero_portoro_com_design_exclusivo.png",
-  descricao:
-    "Fabricação e instalação de uma mesa de jantar personalizada em granito Nero Portoro, destacando seus veios dourados únicos que conferem luxo e sofisticação. O design robusto da base e o tampo polido criam um ponto focal impressionante em um ambiente de sala de jantar espaçoso e contemporâneo, harmonizando com a iluminação pendente moderna e as cadeiras de madeira.",
-},
+      id: 12,
+      titulo: "Mesa de Jantar com Tampo Orgânico em Mármore Exótico",
+      categoria: "Mesas",
+      imagem:
+        "/images/mesas/mesa_de_jantar_com_tampo_organico_em_marmore_exotico.png",
+      descricao:
+        "Fabricação e instalação de uma mesa de jantar exclusiva com tampo em mármore exótico de formato orgânico, apoiado sobre uma base cilíndrica. O design contemporâneo e as variações de veios do mármore criam uma peça central única, combinando arte e funcionalidade, ideal para salas de jantar que buscam sofisticação e originalidade.",
+    },
+    {
+      id: 5,
+      titulo: "Mesa de Jantar em Granito Nero Portoro com Design Exclusivo",
+      categoria: "Mesas",
+      imagem:
+        "/images/mesas/mesa_de_jantar_em_granito_nero_portoro_com_design_exclusivo.png",
+      descricao:
+        "Fabricação e instalação de uma mesa de jantar personalizada em granito Nero Portoro, destacando seus veios dourados únicos que conferem luxo e sofisticação. O design robusto da base e o tampo polido criam um ponto focal impressionante em um ambiente de sala de jantar espaçoso e contemporâneo, harmonizando com a iluminação pendente moderna e as cadeiras de madeira.",
+    },
 
     //Cubas
     {
@@ -323,7 +324,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         " Fabricação e design de cuba esculpida em ônix translúcido, destacando os veios naturais em tons de dourado e creme que conferem exclusividade e luxo. A peça, com sua forma geométrica e acabamento impecável, é ideal para lavabos e banheiros sofisticados, onde a beleza da pedra se torna o ponto focal do ambiente.",
     },
 
-  //Materiais
+    //Materiais
     {
       id: 15,
       titulo: "Patagonia Green (ou Botanic Green): Arte em Cores Naturais",
@@ -334,7 +335,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         "Uma peça exótica que combina a base neutra com um design orgânico e vibrante. Seus veios em tons de verde intenso e preto profundo criam um movimento único e sofisticado. Apresentada em Bookmatch (espelhamento), esta rocha é perfeita para revestir paredes, painéis e lareiras, garantindo uma assinatura de design inigualável e durabilidade extrema.",
     },
     {
-      id:23,
+      id: 23,
       titulo: "Quartzito Patagonia: Luxo Translúcido com Retroiluminação",
       categoria: "Materiais",
       imagem:
@@ -343,15 +344,16 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         "O Quartzito Patagonia é uma verdadeira obra de arte natural, conhecida por sua fusão de minerais: branco, preto e explosões de cristal dourado e âmbar. Sua característica translúcida permite a retroiluminação, transformando a peça em um painel luminoso e dramático. É o material exótico de escolha para halls, bares e ilhas gourmet de alto impacto.",
     },
     {
-      id:38,
+      id: 38,
       titulo: "Quartzito Taj Mahal: Beleza Quente e Resistência Superior",
       categoria: "Materiais",
       imagem:
         "../../public/images/Materiais/Quartzito Taj Mahal Beleza Quente e Resistência Superior.jpg",
-      descricao:"O Quartzito Taj Mahal oferece a estética suave do mármore, mas com a extrema dureza e baixa manutenção do quartzito. Seu fundo branco é sutilmente adornado por veios finos em tons de dourado e marrom claro, adicionando calor e requinte. É a escolha ideal para bancadas de cozinha e áreas gourmet que exigem beleza duradoura e alta resistência a riscos e manchas.",
+      descricao:
+        "O Quartzito Taj Mahal oferece a estética suave do mármore, mas com a extrema dureza e baixa manutenção do quartzito. Seu fundo branco é sutilmente adornado por veios finos em tons de dourado e marrom claro, adicionando calor e requinte. É a escolha ideal para bancadas de cozinha e áreas gourmet que exigem beleza duradoura e alta resistência a riscos e manchas.",
     },
     {
-      id:31,
+      id: 31,
       titulo: "Mármore Calacatta: A Elegância Clássica em Grande Formato",
       categoria: "Materiais",
       imagem:
@@ -366,37 +368,35 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       imagem:
         "../../public/images/Materiais/Quartzito Cristallo O Luxo Translúcido Iluminado.jpg",
       descricao:
-        "O Quartzito Cristallo é uma joia da natureza. Sua característica translúcida permite que a chapa seja retroiluminada, transformando a peça em um espetáculo de luz e brilho. Com veios que variam do âmbar ao ouro, é a definição de luxo e exclusividade, sendo ideal para painéis de destaque, bares e bancadas iluminadas."
+        "O Quartzito Cristallo é uma joia da natureza. Sua característica translúcida permite que a chapa seja retroiluminada, transformando a peça em um espetáculo de luz e brilho. Com veios que variam do âmbar ao ouro, é a definição de luxo e exclusividade, sendo ideal para painéis de destaque, bares e bancadas iluminadas.",
     },
     {
-      id:9,
+      id: 9,
       titulo: "Quartzito Mont Blanc (ou Super White): Elegância Cinza Suave",
       categoria: "Materiais",
-      imagem: 
+      imagem:
         "../../public/images/Materiais/Quartzito Mont Blanc (ou Super White) Elegância Cinza Suave.jpg",
       descricao:
-        "O Quartzito Mont Blanc é a escolha ideal para um design neutro e sofisticado. Com um fundo claro, variando do branco gelo ao cinza suave, é adornado por veios finos e delicados. Combina a estética clássica do mármore com a durabilidade e a baixa porosidade do quartzito, sendo perfeito para bancadas de cozinhas e banheiros de alto padrão."
+        "O Quartzito Mont Blanc é a escolha ideal para um design neutro e sofisticado. Com um fundo claro, variando do branco gelo ao cinza suave, é adornado por veios finos e delicados. Combina a estética clássica do mármore com a durabilidade e a baixa porosidade do quartzito, sendo perfeito para bancadas de cozinhas e banheiros de alto padrão.",
     },
     {
       id: 19,
       titulo: "Cosmic Black: Profundidade e Movimento",
       categoria: "Materiais",
-      imagem: 
+      imagem:
         "../../public/images/Materiais/Cosmic Black Profundidade e Movimento.jpg",
       descricao:
-        "Um padrão de veios sinuosos e turbulentos que cria uma sensação de movimento constante sobre o preto profundo. Esta chapa é a escolha perfeita para quem busca uma estética moderna, oferecendo a força e a resistência do granito com a sofisticação do design natural."
+        "Um padrão de veios sinuosos e turbulentos que cria uma sensação de movimento constante sobre o preto profundo. Esta chapa é a escolha perfeita para quem busca uma estética moderna, oferecendo a força e a resistência do granito com a sofisticação do design natural.",
     },
     {
-      id:29,
+      id: 29,
       titulo: "Via Láctea Extra: O Contraste Supremo",
       categoria: "Materiais",
-      imagem: 
+      imagem:
         "../../public/images/Materiais//Via Láctea Extra O Contraste Supremo.jpg",
       descricao:
-        "Peça de impacto visual incomparável. O fundo preto absoluto é cortado por veios brancos, largos e esculturais, que trazem uma elegância dramática e atemporal ao ambiente. Ideal para ilhas gourmet, lareiras e projetos que exigem um ponto focal de alto luxo e durabilidade superior."
-    }
-
-
+        "Peça de impacto visual incomparável. O fundo preto absoluto é cortado por veios brancos, largos e esculturais, que trazem uma elegância dramática e atemporal ao ambiente. Ideal para ilhas gourmet, lareiras e projetos que exigem um ponto focal de alto luxo e durabilidade superior.",
+    },
   ];
 
   const [filtroAtivo, setFiltroAtivo] = useState("Todos");
