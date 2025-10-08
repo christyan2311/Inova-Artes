@@ -37,7 +37,7 @@ const Cabecalho: React.FC<CabecalhoProps> = ({ secaoAtiva, onSecaoChange }) => {
           >
             <div className="w-20 h-20 rounded-lg flex items-center justify-center bg-orange-600">
               <img
-                src="/images/logo/modern_logo_for_inova_artes_minimalist_design_(1).png"
+                src="/images/logo/modern_logo_for_inova_artes_minimalist_design_1.png"
                 alt="Logo InovaArtes"
                 className="w-24 h-24 object-contain"
               />
