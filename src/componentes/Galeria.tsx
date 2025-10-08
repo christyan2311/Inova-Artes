@@ -139,7 +139,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
         "Cozinha Gourmet com Bancadas e Backsplash em Granito Preto Via Láctea",
       categoria: "Bancadas",
       imagem:
-        "/public/images/bancadas/cozinha_gourmet_com_bancadas_e_backsplash_em_granito_preto_via_lactea.png",
+        "/images/bancadas/cozinha_gourmet_com_bancadas_e_backsplash_em_granito_preto_via_lactea.png",
       descricao:
         "Instalação de bancadas e backsplash em granito Preto Via Láctea, apresentando elegantes veios brancos que adicionam um toque de sofisticação. O projeto inclui cubas duplas embutidas e uma lixeira de bancada, otimizando a funcionalidade para uma cozinha gourmet. Os armários em tons neutros complementam o granito, criando um ambiente moderno e de alto padrão.",
     },
