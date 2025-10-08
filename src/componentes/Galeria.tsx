@@ -196,7 +196,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
       categoria: "Ilhas",
       imagem:
-        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_marmore_calacatta.jpg",
+        "/images/ilhas/cozinha_moderna_com_bancadas_e_ilha_em_marmore_calacatta.jpg",
       descricao:
         " Instalação de ilha gourmet em granito preto absoluto, apresentando um design monolítico e elegante que integra a área de preparo com um balcão de refeições rápidas. O acabamento polido reflete a iluminação do ambiente, enquanto a durabilidade do material garante funcionalidade e sofisticação para cozinhas contemporâneas.",
     },
