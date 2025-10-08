@@ -14,18 +14,18 @@ const PaginaInicial: React.FC<PaginaInicialProps> = ({ id, onNavigate }) => {
   // Para trocar as imagens do carrossel, substitua as URLs abaixo pelas suas imagens
   // Recomendação: Use imagens com resolução mínima de 1920x1080px
   const imagensCarrossel = [
-  '../../public/images/ilhas/cozinha_gourmet_com_ilha_em_mármore_e_design_integrado.png',
-  '../../public/images/area_de_lazer/area_gourmet_externa_com_bancadas.png',
-  '../../public/images/area_de_lazer/piscina_e_jacuzzi.png',
-  '../../public/images/ilhas/cozinha_moderna_com_bancadas_e_ilha_em_marmore_calacatta.jpg',
-  '../../public/images/bancadas/bancadas_funcionais_para_cozinha.png',
-  '../../public/images/banheiros_e_lavatorios/banheiro_com_design_em_marmore_black_white.png',
-  '../../public/images/banheiros_e_lavatorios/banheiro_luxuoso_com_revestimento_em_marmore_verde_esmeralda.jpg',
-  '../../public/images/banheiros_e_lavatorios/lavatorio_duplo_em_marmore_panda_branco_e_preto.png',
-  '../../public/images/area_de_lazer/balcao_iluminado_em_onix_para_bar.png',
-  '../../public/images/bancadas/cozinha_moderna_com_bancadas_em_granito.png',
-  '../../public/images/mesas/mesa_de_jantar_com_tampo_organico_em_marmore_exotico.png',
-  '../../public/images/mesas/mesa_de_jantar_em_granito_nero_portoro_com_design_exclusivo.png',
+  '/images/ilhas/cozinha_gourmet_com_ilha_em_mármore_e_design_integrado.png',
+  '/images/area_de_lazer/area_gourmet_externa_com_bancadas.png',
+  '/images/area_de_lazer/piscina_e_jacuzzi.png',
+  '/images/ilhas/cozinha_moderna_com_bancadas_e_ilha_em_marmore_calacatta.jpg',
+  '/images/bancadas/bancadas_funcionais_para_cozinha.png',
+  '/images/banheiros_e_lavatorios/banheiro_com_design_em_marmore_black_white.png',
+  '/images/banheiros_e_lavatorios/banheiro_luxuoso_com_revestimento_em_marmore_verde_esmeralda.jpg',
+  '/images/banheiros_e_lavatorios/lavatorio_duplo_em_marmore_panda_branco_e_preto.png',
+  '/images/area_de_lazer/balcao_iluminado_em_onix_para_bar.png',
+  '/images/bancadas/cozinha_moderna_com_bancadas_em_granito.png',
+  '/images/mesas/mesa_de_jantar_com_tampo_organico_em_marmore_exotico.png',
+  '/images/mesas/mesa_de_jantar_em_granito_nero_portoro_com_design_exclusivo.png',
   ];
 
   // Estado para controlar qual imagem está ativa no carrossel
