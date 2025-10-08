@@ -159,7 +159,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Bancada e Churrasqueira",
       categoria: "Área de Lazer",
       imagem:
-        "../../public/images/Area de Lazer/Área Gourmet Externa com Bancadas.png",
+        "/images/area_de_lazer/area_gourmet_externa_com_bancadas.png",
       descricao:
         "Projeto completo de área gourmet externa, featuring bancadas e balcão em granito Kashmir White com veios marcantes, proporcionando um ambiente sofisticado e funcional. A churrasqueira e os armários planejados complementam o espaço, ideal para lazer e confraternizações, com vista para a paisagem natural e abundante iluminação.",
     },
@@ -167,7 +167,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       id: 6,
       titulo: " Piscina e Jacuzzi com Borda Infinita em Quartzito Patagônia",
       categoria: "Área de Lazer",
-      imagem: "../../public/images/Area de Lazer/Piscina e Jacuzzi.png",
+      imagem: "/images/area_de_lazer/piscina_e_jacuzzi.png",
       descricao:
         "Projeto paisagístico e construção de área de lazer com piscina de borda infinita e jacuzzi, ambas revestidas em quartzito Patagônia. O material, com suas tonalidades e veios únicos, cria uma fusão orgânica com o ambiente tropical exuberante, complementado pelo deck de madeira, oferecendo um refúgio luxuoso e integrado à natureza..",
     },
@@ -176,7 +176,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: "Lareira e Coluna Revestidas em Granito Black Cosmic",
       categoria: "Área de Lazer",
       imagem:
-        "../../public/images/Area de Lazer/Lareira e Coluna Revestidas em Granito Black Cosmic.jpg",
+        "/images/area_de_lazer/lareira_e_coluna_revestidas_em_granito_black_cosmic.jpg",
       descricao:
         "Instalação de lareira e coluna central revestidas em granito Black Cosmic, destacando seus veios brancos marcantes sobre o fundo escuro. O projeto integra uma lareira de tijolos e nichos laterais, criando um ponto focal imponente e elegante. O contraste do granito com o ambiente minimalista e a porta de madeira ao fundo adicionam sofisticação e modernidade ao espaço",
     },
@@ -195,7 +195,7 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
       titulo: " Cozinha Moderna com Bancadas e Ilha em Mármore Calacatta",
       categoria: "Ilhas",
       imagem:
-        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_mármore_calacatta.jpg",
+        "/images/bancadas/cozinha_moderna_com_bancadas_e_ilha_em_marmore_calacatta.jpg",
       descricao:
         " Instalação de ilha gourmet em granito preto absoluto, apresentando um design monolítico e elegante que integra a área de preparo com um balcão de refeições rápidas. O acabamento polido reflete a iluminação do ambiente, enquanto a durabilidade do material garante funcionalidade e sofisticação para cozinhas contemporâneas.",
     },
