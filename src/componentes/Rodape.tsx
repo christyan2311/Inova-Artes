@@ -18,7 +18,7 @@ const Rodape: React.FC<RodapeProps> = ({ onNavigate }) => {
             <div className="flex items-center space-x-3">
               <div className="w-20 h-20 bg-gradient-to-br bg-gray-900 rounded-lg flex items-center justify-center">
                 <img
-                src="/public/images/Logo/Modern Logo for Inova Artes - Minimalist Design (1).png"
+                src="/images/logo/modern_logo_for_inova_artes_minimalist_design_(1).png"
                 alt="Logo InovaArtes"
                 className="w-24 h-24 object-contain"
               />
