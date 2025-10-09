@@ -453,21 +453,26 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
  const navegarModal = (direcao: 'anterior' | 'proximo') => {
   if (imagemModal === null) return;
 
+  // usa os projetos FILTRADOS, não todos
   const indiceAtual = projetosFiltrados.findIndex(p => p.id === imagemModal);
   if (indiceAtual === -1) return;
 
   let novoIndice = indiceAtual;
 
-  if (direcao === 'anterior' && indiceAtual > 0) {
-    novoIndice = indiceAtual - 1;
-  } else if (direcao === 'proximo' && indiceAtual < projetosFiltrados.length - 1) {
-    novoIndice = indiceAtual + 1;
+  if (direcao === 'anterior') {
+    // só volta se não estiver na primeira
+    if (indiceAtual > 0) novoIndice = indiceAtual - 1;
+    else return; // chegou na primeira, para
   } else {
-    return; // chegou no limite, não faz nada
+    // só avança se não estiver na última
+    if (indiceAtual < projetosFiltrados.length - 1) novoIndice = indiceAtual + 1;
+    else return; // chegou na última, para
   }
 
+  // troca imagem apenas dentro do filtro ativo
   setImagemModal(projetosFiltrados[novoIndice].id);
 };
+
 
 
 
