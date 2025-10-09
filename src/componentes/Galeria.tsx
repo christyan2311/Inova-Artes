@@ -450,23 +450,25 @@ const Galeria: React.FC<GaleriaProps> = ({ id, onNavigate }) => {
     setImagemModal(null);
   };
 
-  const navegarModal = (direcao: 'anterior' | 'proximo') => {
+ const navegarModal = (direcao: 'anterior' | 'proximo') => {
   if (imagemModal === null) return;
 
-  // usa os projetos filtrados
   const indiceAtual = projetosFiltrados.findIndex(p => p.id === imagemModal);
-  if (indiceAtual === -1) return; // caso não encontre, evita erro
+  if (indiceAtual === -1) return;
 
-  let novoIndice;
+  let novoIndice = indiceAtual;
 
-  if (direcao === 'anterior') {
-    novoIndice = indiceAtual > 0 ? indiceAtual - 1 : projetosFiltrados.length - 1;
+  if (direcao === 'anterior' && indiceAtual > 0) {
+    novoIndice = indiceAtual - 1;
+  } else if (direcao === 'proximo' && indiceAtual < projetosFiltrados.length - 1) {
+    novoIndice = indiceAtual + 1;
   } else {
-    novoIndice = indiceAtual < projetosFiltrados.length - 1 ? indiceAtual + 1 : 0;
+    return; // chegou no limite, não faz nada
   }
 
   setImagemModal(projetosFiltrados[novoIndice].id);
 };
+
 
 
   const projetoModal = projetos.find(p => p.id === imagemModal);
