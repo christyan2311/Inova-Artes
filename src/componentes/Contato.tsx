@@ -17,14 +17,15 @@ const Contato: React.FC<ContatoProps> = ({ id }) => {
       icone: MessageSquare,
       titulo: 'WhatsApp',
       valor: '(11) 9999-8888',
-      link: 'https://wa.me/5511999998888'
+      link: 'https://wa.me/5511999998888?text=Gostaria%20de%20solicitar%20um%20orçamento.'
     },
     {
       icone: Mail,
       titulo: 'E-mail',
       valor: 'contato@inovaartes.com.br',
-       link: 'https://mail.google.com/mail/?view=cm&fs=1&to=contato@inovaartes.com.br'
+      link: 'mailto:contato@inovaartes.com.br?subject=Solicitação%20de%20Orçamento&body=Gostaria%20de%20solicitar%20um%20orçamento.'
     },
+
     {
       icone: MapPin,
       titulo: 'Endereço',
@@ -40,7 +41,7 @@ const Contato: React.FC<ContatoProps> = ({ id }) => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Estamos prontos para transformar seus sonhos em realidade. 
+            Estamos prontos para transformar seus sonhos em realidade.
             Entre em contato conosco e receba um atendimento personalizado.
           </p>
         </div>
@@ -58,7 +59,7 @@ const Contato: React.FC<ContatoProps> = ({ id }) => {
                       <IconeComponente className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="text-lg font-bold text-gray-900 mb-2">{info.titulo}</h4>
-                    <a 
+                    <a
                       href={info.link}
                       className="text-gray-600 hover:text-orange-600 transition-colors duration-200"
                     >
