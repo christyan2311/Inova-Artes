@@ -34,7 +34,7 @@ const SobreNos: React.FC<SobreNosProps> = ({ id }) => {
           </div>
           <div className="relative">
             <img 
-              src="" 
+              src="/images/logo/foto_nossa_historia.jpg" 
               alt="Equipe Inova Artes trabalhando"
               className="rounded-2xl shadow-xl w-full"
             />
